@@ -1,14 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello, world! You're are at the app's index. ")
+    return render(request,'index.html')
 
 def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
+    return render(request,'')
 
 def results(request, question_id):
     response = "You're looking at the results of question %s."
