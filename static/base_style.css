@@ -41,8 +41,13 @@ h1
     font-size:150%;
 }
 
+a.banner_link
+{
+    text-decoration: none;
+    color: #0a9f8d;
+}
 
-a
+a.menu_link
 {
     text-decoration: none;
     color: #0a9f8d;
@@ -50,7 +55,8 @@ a
     padding-left:2px;
     padding-right:4px;
 }
-a:hover
+
+a.menu_link:hover
 {
     /*color: #0c6157;*/
     background: #0c6157;
