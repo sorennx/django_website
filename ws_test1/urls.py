@@ -15,6 +15,7 @@ urlpatterns = [
 
     re_path(r'^wstest/$', views.index, name='index'),
 
-
-    #re_path(r'^projects/', views.projects ,name='projects'),
+    #university projects:
+    re_path(r'^projects/uniprojects/$',views.universityProjects, name='uniprojects'),
+    re_path(r'^projects/uniprojects/tablesandforms$', views.tablesAndForms, name='tablesandforms')
 ]

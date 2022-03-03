@@ -58,6 +58,17 @@ a.banner_link
     color: var(--a-fontcolor);
 }
 
+a.basic_link
+{
+    text-decoration:none;
+    color: var(--a-fontcolor);
+
+}
+a.basic_link:hover
+{
+    color: var(--a-background-color)
+}
+
 a.menu_link
 {
     text-decoration: none;

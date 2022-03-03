@@ -31,3 +31,13 @@ def contact(request):
     my_dict = {"title": 'Contact'}
     return render(request, 'main_page/contactinfo.html', my_dict)
 
+
+#Uni projects:
+
+def universityProjects(request):
+    my_dict = {"title": 'University Projects'}
+    return render(request, 'main_page/uniprojects.html', my_dict)
+
+def tablesAndForms(request):
+    my_dict = {"title: ": 'Tables and Forms'}
+    return render(request, 'pai_page/index.html', my_dict)

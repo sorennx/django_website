@@ -29,4 +29,8 @@ urlpatterns = [
     re_path(r'^projects/', include('ws_test1.urls')),
     re_path(r'^contact/', include('ws_test1.urls')),
 
+    #university projects:
+    re_path(r'^projects/uniprojects/',include('ws_test1.urls')),
+    re_path(r'^projects/uniprojects/tablesandforms', include('ws_test1.urls'))
+
 ]
