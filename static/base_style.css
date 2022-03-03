@@ -5,9 +5,20 @@ background: #0c6157
 header-background: #162C29
 
 */
+:root
+{
+    --background-color: #0c6157;
+    --font-color: #0a9f8d;
+    --header-background-color: #162C29;
+
+    --a-fontcolor: #0a9f8d;
+    --a-background-color:#0c6157;
+}
+
+
 body
 {
-    background: #0c6157;
+    background: var(--background-color);
     zoom:150%;
 }
 
@@ -20,8 +31,8 @@ body
 
 #banner, #menu, #content
 {
-    background: #162C29;
-    color: #0a9f8d;
+    background: var(--header-background-color);
+    color: var(--font-color);
     /*padding:1pt;*/
     border:1px solid;
     padding-left:2px;
@@ -44,13 +55,13 @@ h1
 a.banner_link
 {
     text-decoration: none;
-    color: #0a9f8d;
+    color: var(--a-fontcolor);
 }
 
 a.menu_link
 {
     text-decoration: none;
-    color: #0a9f8d;
+    color: var(--a-fontcolor);
     border-right: 1px solid;
     padding-left:2px;
     padding-right:4px;
@@ -59,5 +70,5 @@ a.menu_link
 a.menu_link:hover
 {
     /*color: #0c6157;*/
-    background: #0c6157;
+    background: var(--a-background-color);
 }
