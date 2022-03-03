@@ -10,19 +10,35 @@ body
     color: #000040;
 }
 
-
-#menu
+#kontener
 {
-    background: #ffffff
-
+    background: white;
 }
+#menu {
+float:left; width:16%;
+padding:1%;
+}
+
 
 
 #tresc
 {
-    background: lightskyblue;
+    float:left; width:60%;
+    padding:1%;
 }
 
+#pasek
+{
+    float:right; width:16%;
+    padding:1%;
+}
+#stopka
+{
+    clear:both;
+    width:100%;
+    padding:5px 0 5px 0;
+    text-align:center;
+}
 
 h1,h2, #stopka
 {
@@ -30,3 +46,13 @@ h1,h2, #stopka
     color: #8080ff;
     text-align: center;
 }
+
+*.box { background:#0000a0;
+color:#dbffff;
+padding:5px;
+margin:5px;
+font-size:90%;}
+
+/* hiperłącza w elementach klasy box*/
+
+*.box a{color:#ffffb0}
