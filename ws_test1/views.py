@@ -6,7 +6,7 @@ from django.urls import reverse
 # Create your views here.
 
 def index(request):
-    return render(request,'index.html')
+    return render(request, 'pai_page/index.html')
 
 def detail(request, question_id):
     return render(request,'')
@@ -20,5 +20,14 @@ def vote(request, question_id):
 
 
 def home(request):
-    my_dict = {"name":'Test'}
-    return render(request,'home.html', my_dict)
+    my_dict = {"name":'Home page'}
+    return render(request, 'main_page/home.html', my_dict)
+
+def projects(request):
+    my_dict = {"name": 'Projects page'}
+    return render(request,'main_page/projects.html', my_dict)
+
+def contact(request):
+    my_dict = {"name:": 'Contact page'}
+    return render(request, 'main_page/contact.html', my_dict)
+
