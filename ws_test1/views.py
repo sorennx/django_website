@@ -20,4 +20,5 @@ def vote(request, question_id):
 
 
 def home(request):
-    return render(request,'home.html')
+    my_dict = {"name":'Emil jest gupi huehuehue'}
+    return render(request,'home.html', my_dict)
