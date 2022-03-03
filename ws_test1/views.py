@@ -28,6 +28,6 @@ def projects(request):
     return render(request,'main_page/projects.html', my_dict)
 
 def contact(request):
-    my_dict = {"title:": 'Contact'}
+    my_dict = {"title": 'Contact'}
     return render(request, 'main_page/contactinfo.html', my_dict)
 
