@@ -1,0 +1,42 @@
+table
+{
+    background: lightyellow;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+
+    border: 1px solid darkblue;
+
+}
+
+
+caption
+{
+    font-size: 150%;
+
+}
+
+
+tfoot, thead
+{
+    background:darkblue;
+    color:white;
+    font-size:120%
+}
+
+
+tfoot a {
+    color:#ffffff;
+}
+
+
+td, th {
+    border:1pt solid darkblue;
+}
+
+
+*.parzysty
+{
+
+    background: white;
+}

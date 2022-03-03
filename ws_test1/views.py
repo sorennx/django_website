@@ -6,7 +6,7 @@ from django.urls import reverse
 # Create your views here.
 
 def index(request):
-    return render(request, 'pai_page/index.html')
+    return render(request, 'pai_page/tablesandforms/index.html')
 
 def detail(request, question_id):
     return render(request,'')
@@ -38,6 +38,16 @@ def universityProjects(request):
     my_dict = {"title": 'University Projects'}
     return render(request, 'main_page/uniprojects.html', my_dict)
 
+#tablesAndForms
+
 def tablesAndForms(request):
-    my_dict = {"title: ": 'Tables and Forms'}
-    return render(request, 'pai_page/index.html', my_dict)
+    my_dict = {"title:": 'Tables and Forms'}
+    return render(request, 'pai_page/tablesandforms/index.html', my_dict)
+
+def tablesAndForms_tables(request):
+    my_dict={"title:": "Tables and Froms - tables"}
+    return render(request, 'pai_page/tablesandforms/tabele.html', my_dict)
+
+def tablesAndForms_forms(request):
+    my_dict={"title:": "Tables and Froms - tables"}
+    return render(request, 'pai_page/tablesandforms/formularze.html', my_dict)
