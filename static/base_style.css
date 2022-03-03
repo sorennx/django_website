@@ -1,15 +1,42 @@
-/*colors:071314 111F21 1E363B 1D383D #259C8D */
+/*colors:071314 111F21 1E363B 1D383D 259C8D 0c6157 0a9f8d
+
+font: #0a9f8d
+background: #0c6157
+header-background: #162C29
+
+*/
 body
 {
-    background: #071314;
+    background: #0c6157;
 }
-#header
+#banner, #menu
 {
-    background: #111F21;
-    color: #259C8D;
+    background: #162C29;
+    color: #0a9f8d;
+    /*padding:1pt;*/
+    border:1px solid;
+
+
+}
+#menu
+{
+    font-size: 110%;
 }
 
 h1
 {
     font-size:150%;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: #0a9f8d;
+    border-right: 1px solid;
+}
+a:hover
+{
+    /*color: #0c6157;*/
+    background: #0c6157;
 }
