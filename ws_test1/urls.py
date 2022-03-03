@@ -1,7 +1,7 @@
 from django.urls import re_path
 from . import views
 urlpatterns = [
-    re_path(r'^$',views.home, name='index'),
+    #re_path(r'^$',views.home, name='index'),
     # ex: /polls/5/
     re_path(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
     # ex: /polls/5/results/
