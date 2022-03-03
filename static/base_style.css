@@ -23,12 +23,14 @@ body
     color: #0a9f8d;
     /*padding:1pt;*/
     border:1px solid;
+    padding-left:2px;
 }
 
 
 #menu
 {
     font-size: 110%;
+    padding-left:1pt;
 }
 
 
@@ -44,6 +46,8 @@ a
     text-decoration: none;
     color: #0a9f8d;
     border-right: 1px solid;
+    padding-left:2px;
+    padding-right:4px;
 }
 a:hover
 {
