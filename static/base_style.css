@@ -9,19 +9,29 @@ body
 {
     background: #0c6157;
 }
-#banner, #menu
+
+
+#header
+{
+    padding-bottom:10px;
+}
+
+
+#banner, #menu, #content
 {
     background: #162C29;
     color: #0a9f8d;
     /*padding:1pt;*/
     border:1px solid;
-
-
 }
+
+
 #menu
 {
     font-size: 110%;
 }
+
+
 
 h1
 {
