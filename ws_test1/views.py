@@ -20,14 +20,14 @@ def vote(request, question_id):
 
 
 def home(request):
-    my_dict = {"name":'Home page'}
+    my_dict = {"title":'Home'}
     return render(request, 'main_page/home.html', my_dict)
 
 def projects(request):
-    my_dict = {"name": 'Projects page'}
+    my_dict = {"title": 'Projects'}
     return render(request,'main_page/projects.html', my_dict)
 
 def contact(request):
-    my_dict = {"name:": 'Contact page'}
-    return render(request, 'main_page/contact.html', my_dict)
+    my_dict = {"title:": 'Contact'}
+    return render(request, 'main_page/contactinfo.html', my_dict)
 
