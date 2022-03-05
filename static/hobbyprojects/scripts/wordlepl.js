@@ -19,10 +19,11 @@ function blockRow(row)
 
 function wordlepl()
 {
+    console.log("Starting wordlepl game..")
     rowList = [document.getElementsByClassName('tile_input_r1'),
         document.getElementsByClassName('tile_input_r2'),document.getElementsByClassName('tile_input_r2'),
         document.getElementsByClassName('tile_input_r3'),document.getElementsByClassName('tile_input_r4'),
-        document.getElementsByClassName('tile_input_r5'),document.getElementsByClassName('tile_input_6')]
+        document.getElementsByClassName('tile_input_r5'),document.getElementsByClassName('tile_input_r6')]
 
     for (let i=1; i<rowList.length; i++){
         blockRow(rowList[i]);
