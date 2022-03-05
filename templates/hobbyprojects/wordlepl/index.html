@@ -4,14 +4,30 @@
 
 
 {% block content %}
-    <script type="text/javascript">
-        wordlepl();
+    <script type="text/javascript" defer>
+        console.log("Page loaded.");
+
+
+
+        let stage=0;
+
+        let wordToGuess = getRandomWord();
+        console.log(wordToGuess);
+
+
+        document.addEventListener('keydown',function(event){
+        if (event.code ==='Enter'){
+           stage = wordlepl(stage,wordToGuess);
+        }
+
+
+    })
     </script>
 
     <div id="gamecontainer">
 
         <div class="tile_row" id="row1">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t11" onkeyup="autoMove(this,'t12')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t11" onkeyup="autoMove(this,'t12')"  autofocus> </div>
             <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t12" onkeyup="autoMove(this,'t13')"> </div>
             <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t13" onkeyup="autoMove(this,'t14')"> </div>
             <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t14" onkeyup="autoMove(this,'t15')"> </div>
@@ -21,43 +37,43 @@
         </div>
 
         <div class="tile_row" id="row2">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t11"> </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t12"> </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t13"> </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t14"> </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t15"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t21" onkeyup="autoMove(this,'t22')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t22" onkeyup="autoMove(this,'t23')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t23" onkeyup="autoMove(this,'t24')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t24" onkeyup="autoMove(this,'t25')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r2" id="t25" > </div>
         </div>
 
         <div class="tile_row" id="row3">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" id="t31" onkeyup="autoMove(this,'t32')" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" id="t32" onkeyup="autoMove(this,'t33')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" id="t33" onkeyup="autoMove(this,'t34')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" id="t34" onkeyup="autoMove(this,'t35')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r3" id="t35"> </div>
         </div>
 
         <div class="tile_row" id="row4">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" id="t41" onkeyup="autoMove(this,'t42')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" id="t42" onkeyup="autoMove(this,'t43')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" id="t43" onkeyup="autoMove(this,'t44')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" id="t44" onkeyup="autoMove(this,'t45')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r4" id="t45"> </div>
         </div>
 
         <div class="tile_row" id="row5">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" id="t51" onkeyup="autoMove(this,'t52')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" id="t52" onkeyup="autoMove(this,'t53')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" id="t53" onkeyup="autoMove(this,'t54')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" id="t54" onkeyup="autoMove(this,'t55')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r5" id="t55"> </div>
         </div>
 
         <div class="tile_row" id="row6">
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" > </div>
-            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" id="t61" onkeyup="autoMove(this,'t62')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" id="t62" onkeyup="autoMove(this,'t63')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" id="t63" onkeyup="autoMove(this,'t64')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" id="t64" onkeyup="autoMove(this,'t65')"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r6" id="t65"> </div>
         </div>
     </div>
 
@@ -69,11 +85,19 @@
 {% endblock %}
 
 {% block results %}
-
-    <button onclick="test()"> Testjs </button>Row1: <label for="row0"></label> <input id="row0_res" disabled value=""> <br/>
-    Row2: <br/>
-    Row3: <br/>
-    Row4: <br/>
-    Row5: <br/>
+    <script>
+        rowList = [document.getElementsByClassName('tile_input_r1'),
+        document.getElementsByClassName('tile_input_r2'),
+        document.getElementsByClassName('tile_input_r3'),document.getElementsByClassName('tile_input_r4'),
+        document.getElementsByClassName('tile_input_r5'),document.getElementsByClassName('tile_input_r6')];
+        for (let i=1; i<rowList.length; i++){
+            blockRow(rowList[i]);
+        }
+    </script>
+{#    <button onclick="test()"> Testjs </button>Row1: <label for="row0"></label> <input id="row0_res" disabled value=""> <br/>#}
+{#    Row2: <br/>#}
+{#    Row3: <br/>#}
+{#    Row4: <br/>#}
+{#    Row5: <br/>#}
 
 {% endblock %}
