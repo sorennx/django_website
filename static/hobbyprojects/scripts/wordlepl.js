@@ -16,7 +16,7 @@ function blockRow(row)
 {
 
     for (let i=0; i<row.length; i++){
-        document.getElementsByClassName(row[i]).disabled=true;
+        row[i].disabled=true;
     }
 }
 
