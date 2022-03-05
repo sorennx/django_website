@@ -16,7 +16,7 @@
 
 
         document.addEventListener('keydown',function(event){
-        if (event.code ==='Enter' || event.code==='Go'){
+        if (event.which===13){
            stage = wordlepl(stage,wordToGuess);
         }
 
