@@ -14,7 +14,10 @@ function test()
 
 function blockRow(row)
 {
-    document.getElementsByClassName(row).disabled=true;
+
+    for (let i=0; i<row.length; i++){
+        document.getElementsByClassName(row[i]).disabled=true;
+    }
 }
 
 function wordlepl()
