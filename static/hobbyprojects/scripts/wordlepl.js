@@ -12,7 +12,7 @@ function test()
 
 function moveToNextRow(stage,rowList){
     document.addEventListener('keydown',function(event){
-        if (event.code ==='Enter'){
+        if (event.code ==='Enter' || event.which===13){
             rowList[stage][0].focus();
         }
     })
