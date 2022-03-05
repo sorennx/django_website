@@ -120,7 +120,7 @@ a.menu_link:hover
     background-color: var(--tile-hover-color);
 }
 
-.tile_input, .tile_input_r1
+.tile_input, .tile_input_r1, .tile_input_r2, .tile_input_r3,.tile_input_r4,.tile_input_r5, .tile_input_r6
 {
     width: 80%;
     height: 80%;
