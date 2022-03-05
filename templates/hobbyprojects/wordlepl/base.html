@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hobbyprojects/css/base_style.css' %}">
+    <script src="{% static 'hobbyprojects/scripts/wordlepl.js' %}"> </script>
+</head>
+
+
+<body>
+    <div id="container">
+
+            <div id="header">
+
+
+                <div id="banner">
+                    <a href="#" class="banner_link"> <h1> Wordle, but in Polish! </h1></a>
+
+                </div>
+
+                <div id="menu">
+
+                    Wordle
+
+                </div>
+
+
+            </div>
+
+
+            <div id="content">
+
+                {% block content %}
+                {%  endblock %}
+
+
+            </div>
+
+            <div id="results">
+                {% block results %}
+                {% endblock %}
+            </div>
+
+
+            <div id="footer">
+
+
+            </div>
+    </div>
+
+
+</body>
+
+
+</html>

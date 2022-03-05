@@ -20,4 +20,10 @@ urlpatterns = [
     re_path(r'^projects/uniprojects/tablesandforms$', views.tablesAndForms, name='tablesandforms'),
     re_path(r'^projects/uniprojects/tablesandforms/tables$', views.tablesAndForms_tables, name='tablesandforms'),
     re_path(r'^projects/uniprojects/tablesandforms/forms$', views.tablesAndForms_forms, name='tablesandforms'),
+
+    #hobby projects:
+    re_path(r'^projects/hobbyprojects/$', views.hobbyprojects, name='hobbyprojects'),
+    re_path(r'^projects/hobbyprojects/wordlepl$', views.wordlepl, name='hobbyprojects'),
+
+
 ]

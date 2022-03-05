@@ -1,0 +1,119 @@
+{% extends 'hobbyprojects/wordlepl/base.html' %}
+
+
+
+
+{% block content %}
+<script type="text/javascript">
+
+    row = document.getElementsByClassName("tile_input_r1");
+    let i=1;
+    let check1 = false;
+    while (i<=10) {
+        {#task(i);#}
+        checkRow(row,i);
+        i+=1;
+        if (check1===true){
+            break;
+        }
+     }
+     test();
+
+    function task(i) {
+      setTimeout(function() {
+          console.log(i);
+      }, 2000 * i);
+    }
+
+    function checkRow(row,i){
+        setTimeout(function() {
+            for (let i = 0; i < row.length; i++) {
+                if (!row[i].value){
+                    continue;
+                    check1=false;
+
+
+
+                }
+                else{
+                    check1=true;
+                }
+
+
+        }
+             console.log(check1);
+        },2000*i);
+
+    }
+    </script>
+
+    <div id="gamecontainer">
+
+        <div class="tile_row" id="row0">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t01" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t02"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t03"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t04"> </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input_r1" id="t05"> </div>
+
+
+        </div>
+
+        <div class="tile_row" id="row1">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+        </div>
+
+        <div class="tile_row" id="row2">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+        </div>
+
+        <div class="tile_row" id="row3">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+        </div>
+
+        <div class="tile_row" id="row4">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+        </div>
+
+        <div class="tile_row" id="row5">
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+            <div class="tile"> <input type="text" maxlength="1" class="tile_input" > </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
+
+{% block results %}
+
+    <button onclick="test()"> Testjs </button>Row0: <label for="row0"></label> <input id="row0_res" disabled value=""> <br/>
+    Row1: <br/>
+    Row3: <br/>
+    Row4: <br/>
+    Row5: <br/>
+
+{% endblock %}

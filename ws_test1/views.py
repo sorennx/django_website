@@ -49,5 +49,14 @@ def tablesAndForms_tables(request):
     return render(request, 'pai_page/tablesandforms/tabele.html', my_dict)
 
 def tablesAndForms_forms(request):
-    my_dict={"title:": "Tables and Froms - tables"}
+    my_dict={"title:": "Tables and Froms - forms"}
     return render(request, 'pai_page/tablesandforms/formularze.html', my_dict)
+
+#hobby projects:
+def hobbyprojects(request):
+    my_dict = {"title": 'Hobby Projects'}
+    return render(request, 'main_page/hobbyprojects.html', my_dict)
+
+def wordlepl(request):
+    my_dict = {"title": 'Wordlepl'}
+    return render(request, 'hobbyprojects/wordlepl/index.html', my_dict)
