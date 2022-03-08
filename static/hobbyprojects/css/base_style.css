@@ -151,3 +151,9 @@ a.menu_link:hover
     width:50%;
     float: right;
 }
+.letter_box{
+    float: right;
+}
+.letter_box{
+    float:bottom;
+}
