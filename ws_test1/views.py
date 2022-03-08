@@ -51,6 +51,12 @@ def tablesAndForms_tables(request):
 def tablesAndForms_forms(request):
     my_dict={"title:": "Tables and Froms - forms"}
     return render(request, 'pai_page/tablesandforms/formularze.html', my_dict)
+#pizza creator
+
+def pizzaCreator(request):
+    return render(request, 'pai_page/pizzacreator/pizzacreator.html', {})
+
+
 
 #hobby projects:
 def hobbyprojects(request):
