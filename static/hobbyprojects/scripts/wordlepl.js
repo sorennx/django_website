@@ -17,11 +17,19 @@ function moveToNextRow(stage,rowList){
         }
     })
 }
+function moveToPrevTile(stage,rowList,prevTile){
+    document.addEventListener('keydown',function(event){
+        if (event.code ==='Backspace'){
+            rowList[stage][prevTile].focus();
+        }
+    })
+}
 
 function autoMove(currentField,nextField){
     if (currentField.value.length >= currentField.maxLength){
         document.getElementById(nextField).focus();
     }
+
 }
 
 function blockRow(row)
@@ -133,6 +141,8 @@ function wordlepl(stage,wordToGuess)
             blockRow(rowList[i]);
         }
     }
+
+
 
 
     let isRowEmpty = checkIfRowEmpty(rowList[stage]);

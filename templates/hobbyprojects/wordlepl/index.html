@@ -7,21 +7,29 @@
     <script type="text/javascript" defer>
         console.log("Page loaded.");
 
-
+        rowList = [document.getElementsByClassName('tile_input_r1'),
+        document.getElementsByClassName('tile_input_r2'),
+        document.getElementsByClassName('tile_input_r3'),document.getElementsByClassName('tile_input_r4'),
+        document.getElementsByClassName('tile_input_r5'),document.getElementsByClassName('tile_input_r6')];
 
         let stage=0;
 
         let wordToGuess = getRandomWord();
-        console.log(wordToGuess);
+
+
 
 
         document.addEventListener('keydown',function(event){
         if (event.code==='Enter'){
            stage = wordlepl(stage,wordToGuess);
+           console.log(wordToGuess);
+
         }
-
-
-    })
+        if (event.code==='Backspace'){
+            clearRow(rowList[stage]);
+            rowList[stage][0].focus();
+        }
+        })
     </script>
 
     <div id="gamecontainer">
