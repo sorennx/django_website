@@ -56,7 +56,9 @@ def tablesAndForms_forms(request):
 def pizzaCreator(request):
     return render(request, 'pai_page/pizzacreator/pizzacreator.html', {})
 
-
+#other
+def mathsStuff(request):
+    return render(request,'pai_page/other/maths.html',{})
 
 #hobby projects:
 def hobbyprojects(request):
@@ -66,3 +68,6 @@ def hobbyprojects(request):
 def wordlepl(request):
     my_dict = {"title": 'Wordlepl'}
     return render(request, 'hobbyprojects/wordlepl/index.html', my_dict)
+
+
+
