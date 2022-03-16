@@ -36,5 +36,6 @@ urlpatterns = [
     re_path(r'^projects/uniprojects/tablesandforms/forms', include('ws_test1.urls')),
     re_path(r'^projects/uniprojects/pizzacreator/', include('ws_test1.urls')),
     re_path(r'^projects/uniprojects/other/maths/',include('ws_test1.urls')),
+    re_path(r'^projects/uniprojects/other/css-selectors/', include('ws_test1.urls')),
 
 ]

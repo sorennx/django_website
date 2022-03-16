@@ -1,0 +1,40 @@
+#footer
+{
+    all: initial;
+    margin-top: 100px;
+    margin-left: 5%;
+
+}
+
+h1, h3, p
+{
+    margin-left: 5%;
+
+}
+
+p
+{
+    background: lightgrey;
+    border: 1px dotted rgb(12,145,156);
+    margin-right: 20%;
+}
+
+em
+{
+    font-family: "Verdana", serif;
+    font-size: small;
+    color: #0000c6;
+}
+
+
+.property
+{
+    letter-spacing: 6px;
+}
+
+.description
+{
+    font-family: Georgia serif;
+    font-size: 13px;
+}
+

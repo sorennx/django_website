@@ -51,14 +51,17 @@ def tablesAndForms_tables(request):
 def tablesAndForms_forms(request):
     my_dict={"title:": "Tables and Froms - forms"}
     return render(request, 'pai_page/tablesandforms/formularze.html', my_dict)
-#pizza creator
+
+#other stuff
+def mathsStuff(request):
+    return render(request,'pai_page/other/maths.html', {})
+
+def cssSelectors(request):
+    return render(request,'pai_page/other/css-selectors.html', {})
 
 def pizzaCreator(request):
     return render(request, 'pai_page/pizzacreator/pizzacreator.html', {})
 
-#other
-def mathsStuff(request):
-    return render(request,'pai_page/other/maths.html',{})
 
 #hobby projects:
 def hobbyprojects(request):
@@ -68,6 +71,5 @@ def hobbyprojects(request):
 def wordlepl(request):
     my_dict = {"title": 'Wordlepl'}
     return render(request, 'hobbyprojects/wordlepl/index.html', my_dict)
-
 
 
