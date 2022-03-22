@@ -112,6 +112,7 @@ text-decoration:none;
 float:left;
 width:75%;
 padding:1%;
+    background: lightblue;
 }
 #pasek {
 float:right;
@@ -123,4 +124,12 @@ clear:both;
 width:100%;
 padding:5px 0 5px 0;
 text-align:center;
+}
+
+#galery_3x3{
+    margin: 0 auto;
+}
+
+#galery_3x3 th{
+    padding: 0 10px 0 10px;
 }
