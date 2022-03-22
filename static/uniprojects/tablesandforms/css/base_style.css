@@ -30,6 +30,7 @@ font-size:90%;}
 
 *.box a{color:#ffffb0}
 
+/*Nowa nawigacja*/
 #nav {
  text-align: left;
  overflow: hidden;
@@ -64,7 +65,6 @@ ul#nav li ul {
  overflow: hidden;
  display: none;
 }
-
 ul#nav li:hover ul {
  position: absolute;
  background: #aaa;
@@ -79,7 +79,7 @@ width:100%;
 margin:0;
 padding:0;
 background:#ffffff;
-border-bottom:2px solid #0000a0;
+
 }
 #menu li {
 float:left;

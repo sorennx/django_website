@@ -52,6 +52,9 @@ def tablesAndForms_forms(request):
     my_dict={"title:": "Tables and Froms - forms"}
     return render(request, 'pai_page/tablesandforms/formularze.html', my_dict)
 
+def galeria(request):
+    return render(request, 'pai_page/tablesandforms/galeria.html', {})
+
 #other stuff
 def mathsStuff(request):
     return render(request,'pai_page/other/maths.html', {})
