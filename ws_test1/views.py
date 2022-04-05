@@ -55,6 +55,12 @@ def tablesAndForms_forms(request):
 def galeria(request):
     return render(request, 'pai_page/tablesandforms/galeria.html', {})
 
+def walidacja(request):
+    return render(request,'pai_page/tablesandforms/walidacja.html',{})
+
+def dotacje(request):
+    return render(request,'pai_page/tablesandforms/dotacje.html',{})
+
 #other stuff
 def mathsStuff(request):
     return render(request,'pai_page/other/maths.html', {})
@@ -74,5 +80,6 @@ def hobbyprojects(request):
 def wordlepl(request):
     my_dict = {"title": 'Wordlepl'}
     return render(request, 'hobbyprojects/wordlepl/index.html', my_dict)
+
 
 
