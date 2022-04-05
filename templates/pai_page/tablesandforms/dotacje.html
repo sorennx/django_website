@@ -14,23 +14,69 @@
             <div id="main_content">
 
                 <form>
-                    <fieldset id="Size" name="Size" >
-                        <label>Beneficjent<input type="text" id="beneficient"> </label>
-                        <br/><label>Wartość dotacji<input type="text" id="dotation-valie"> </label>
+                    <fieldset>
+                    <table>
+                        <label>
+                            <tbody>
+                            <tr>
+
+                                <th>Beneficjent:</th>
+                                <th><input type="text" id="beneficient"> </th>
+                            </tr>
+
+                            <tr>
+                                <th>Wartość dotacji: </th>
+                                <th> <input type="text" id="dotation-valie"></th>
+                            </tr>
+
+                            </tbody>
+                        </label>
+
+                    </table>
+                    </fieldset>
+
+                    <fieldset id="dane" name="dane" >
+                        <legend>Dane karty płatniczej</legend>
+                        <table>
+                        <label>
+                            <tbody>
+                            <label>
+                            <tr>
+
+                                <th>Karta:</th>
+                               <th><input type="radio" name="card" value="visa"/></th> Visa
+                                <th><input type="radio" name="card" value="mastercard"/></th>Mastercard
+
+
+
+                            </tr>
+                                </label>
+                            <tr>
+
+                                <th>Numer:</th>
+                                <th><input type="text" id="card-number"> </th>
+                            </tr>
+
+                            <tr>
+                                <th>Wartość dotacji: </th>
+                                <th> <input type="date" id="date"></th>
+                            </tr>
+                            <tr>
+
+                                <th>Kod CVV:</th>
+                                <th><input type="text" id="cvv-number"> </th>
+                            </tr>
+                            </tbody>
+                        </label>
+
+                    </table>
 
 
                     </fieldset>
 
                     <fieldset id="Extras">
-                        <legend>Dane karty płatniczej</legend>
-                        <label>
-                            <input type="radio" name="card" value="visa"/>
-                        Visa <br/>
-                        </label>
-                        <label>
-                            <input type="radio" name="card" value="mastercard"/>
-                        Mastercard <br/>
-                        </label>
+
+
 
 
                     </fieldset>
