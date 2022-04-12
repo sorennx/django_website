@@ -23,6 +23,7 @@ urlpatterns = [
     re_path(r'^projects/uniprojects/tablesandforms/galeria$', views.galeria,name='tablesandforms'),
     re_path(r'^projects/uniprojects/tablesandforms/walidacja$',views.walidacja,name='tablesandforms'),
     re_path(r'^projects/uniprojects/tablesandforms/dotacje$',views.dotacje,name='tablesandforms'),
+    re_path(r'^projects/uniprojects/responsive/rwd$',views.responsive,name='responsive'),
 
     #other stuff:
     re_path(r'^projects/uniprojects/pizzacreator/$', views.pizzaCreator,name='pizzacreator'),

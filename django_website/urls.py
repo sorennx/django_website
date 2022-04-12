@@ -40,5 +40,6 @@ urlpatterns = [
     re_path(r'^projects/uniprojects/tablesandforms/galeria', include('ws_test1.urls')),
     re_path(r'^projects/uniprojects/tablesandforms/walidacja', include('ws_test1.urls')),
     re_path(r'^projects/uniprojects/tablesandforms/dotacje', include('ws_test1.urls')),
+    re_path(r'^projects/uniprojects/responsive/rwd', include('ws_test1.urls')),
 
 ]

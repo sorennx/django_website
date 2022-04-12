@@ -60,6 +60,8 @@ def walidacja(request):
 
 def dotacje(request):
     return render(request,'pai_page/tablesandforms/dotacje.html',{})
+def responsive(request):
+    return render(request,'pai_page/responsive/rwd.html',{})
 
 #other stuff
 def mathsStuff(request):
