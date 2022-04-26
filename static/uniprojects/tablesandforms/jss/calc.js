@@ -18,8 +18,4 @@ function calcInstallment(){
     document.getElementById('ratamiesieczna').value = rata.toFixed(2);
     document.getElementById('kwotazodsetkami').value = (rata*n).toFixed(2);
 
-    // let rm = document.getElementById('ratamiesieczna');
-    // let total = document.getElementById('kwotazodsetkami');
-    // rm.value = rata;
-    // total.value = rata*10;
 }
