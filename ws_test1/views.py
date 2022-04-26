@@ -60,6 +60,10 @@ def walidacja(request):
 
 def dotacje(request):
     return render(request,'pai_page/tablesandforms/dotacje.html',{})
+
+def formscalcs(request):
+    return render(request, 'pai_page/tablesandforms/formscalcs.html',{})
+
 def responsive(request):
     return render(request,'pai_page/responsive/rwd.html',{})
 
@@ -82,6 +86,5 @@ def hobbyprojects(request):
 def wordlepl(request):
     my_dict = {"title": 'Wordlepl'}
     return render(request, 'hobbyprojects/wordlepl/index.html', my_dict)
-
 
 
