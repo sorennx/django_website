@@ -91,10 +91,12 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
+
 }
 
 nav li {
     flex: auto;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -104,13 +106,12 @@ nav li {
 }
 
 nav a {
-    float: left;
+
     display: block;
     margin: 0;
     padding: 4px 8px;
     color: #ffffd7;
     text-decoration: none;
-    /*border: 1px solid #0000c6;*/
     border-bottom: none;
     background: #0000a0;
 }

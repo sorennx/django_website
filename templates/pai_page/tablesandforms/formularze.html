@@ -13,10 +13,10 @@
             </ul>
             <form id="or" action="mailto:kamil.pula.dev@gmail.com" method="post" >
                 <h4>Przykładowy formularz HTML</h4> <br/>
-                Nazwisko:<input type="text" name="login" autofocus /> <br />
-                Wiek:<input type="text" name="login"/> <br />
+                Imie i Nazwisko:<input type="text" name="login" autofocus required placeholder="Enter your name" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"/> <br />
+                Wiek:<input type="number" name="login" required min="18" max="99", placeholder="Age"/> <br />
                 Państwo
-                <select size="1" name="Panstwo">
+                <select size="1" name="Panstwo" required>
                     <option value="p">Polska</option>
                     <option value="a">Anglia</option>
                     <option value="u">USA</option>
@@ -25,7 +25,7 @@
                 </select>
                 <br/>
                 Adres e-mail:
-                <input type="email" id="email" />
+                <input type="email" id="email" placeholder="Enter your email adress" required/>
 
 
                 <h5>Zamawiam tutorial z języka:</h5> <br />
