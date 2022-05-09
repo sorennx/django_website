@@ -42,7 +42,7 @@ img {
     border-radius: 10px;
 }
 
-.slajd {
+.picture {
     float: left;
     display: block;
     width: 13%;
@@ -53,7 +53,7 @@ img {
     margin: 1%;
 }
 
-.slajd:hover {
+.picture:hover {
     background: #45525a;
 }
 
@@ -71,7 +71,7 @@ footer {
  padding: 10px 0;
  font-size:140%;
  }
- .slajd {width: 45%; }
+ .picture {width: 45%; }
 }
 @media screen and (min-width: 481px) and (max-width: 720px) {
  body { font-size: 13px; }

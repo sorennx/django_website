@@ -1,11 +1,12 @@
 table
 {
-    background: lightyellow;
+    background: darkcyan;
     text-align: center;
     width: 94%;
     margin: 2%;
 
-    border: 1px solid darkblue;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
 
 }
 
@@ -19,7 +20,7 @@ caption
 
 tfoot, thead
 {
-    background:darkblue;
+    background: #0c6157;
     color:white;
     font-size:120%
 }
@@ -31,12 +32,10 @@ tfoot a {
 
 
 td, th {
-    border:1pt solid darkblue;
+    border:1pt solid #1e342c;
+}
+tr:nth-child(even) {
+    background: #0e594f;
 }
 
 
-*.parzysty
-{
-
-    background: white;
-}

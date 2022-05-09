@@ -1,135 +1,216 @@
 /* wyzerowanie marginesów i wypełnień: */
 h1, h2, h3 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-#kontener
-{
+#content {
     background: white;
-    width:90%;
+    width: 90%;
 }
 
 
-
-
-h1,h2
-{
+h1, h2 {
     background: #000040;
     color: #8080ff;
     text-align: center;
 }
 
-*.box { background:#0000a0;
-color:#dbffff;
-padding:5px;
-margin:5px;
-font-size:90%;}
+*.box {
+    background: #0000a0;
+    color: #dbffff;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+}
 
 /* hiperłącza w elementach klasy box*/
 
-*.box a{color:#ffffb0}
+*.box a {
+    color: #ffffb0
+}
 
 /*Nowa nawigacja*/
 #nav {
- text-align: left;
- overflow: hidden;
- font-family: calibri, tahoma;
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
 }
+
 ul#nav li {
- border: 1px solid #d5d5d5;
- list-style-type: none;
- float: left;
- background: #98bed8;
- margin-left: 3px;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #0000a0;
+    margin-left: 3px;
 }
+
 ul#nav li:hover {
- border: 1px solid #d5d5d5;
- list-style-type: none;
- float: left;
- background: #f0f0f0;
- margin-left: 3px;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    /*background: #f0f0f0;*/
+    margin-left: 3px;
 }
+
 ul#nav li a {
- display : block;
- padding : 4pt;
- text-decoration : none;
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
 }
+
 ul#nav li li a {
- width: 160px;
+    width: 160px;
 }
+
 ul#nav li li:hover {
- background: white;
+    background: white;
 }
+
 ul#nav li ul {
- overflow: hidden;
- display: none;
+    overflow: hidden;
+    display: none;
 }
+
 ul#nav li:hover ul {
- position: absolute;
- background: #aaa;
- padding: 0;
- display: block;
- width: 177px;
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    display: block;
+    width: 177px;
 }
 
-#menu {
-float:left;
-width:100%;
-margin:0;
-padding:0;
-background:#ffffff;
+nav {
+
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
 
 }
-#menu li {
-float:left;
-margin:0;
-padding:0;
-list-style:none;
-padding-right:3px;
-font-family:"Lucida Grande", sans-serif;
-font-size:85%;
+
+nav ul {
+    display: flex;
+    flex-direction: row;
 }
-#menu a {
-float:left;
-display:block;
-margin:0;
-padding:4px 8px;
-color:#ffffd7;
-text-decoration:none;
-border: 1px solid
-#0000c6;
-border-bottom:none;
-background:#0000a0;
+
+nav li {
+    flex: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 3px;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 85%;
 }
-#menu a:hover {
-background:#0000d5;
-color:#ffffff;
-text-decoration:none;
+
+nav a {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 4px 8px;
+    color: #ffffd7;
+    text-decoration: none;
+    /*border: 1px solid #0000c6;*/
+    border-bottom: none;
+    background: #0000a0;
 }
+
+nav a:hover {
+    background: #0000d5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /*Pozycjonowanie elementów na stronie */
-#tresc {
-float:left;
-width:75%;
-padding:1%;
+main {
+    float: left;
+    width: 75%;
+    padding: 1%;
     background: lightblue;
 }
-#pasek {
-float:right;
-width:20%;
-padding:1%;
-}
-#stopka{
-clear:both;
-width:100%;
-padding:5px 0 5px 0;
-text-align:center;
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 1%;
 }
 
-#galery_3x3{
+footer {
+    clear: both;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+#galery_3x3 {
     margin: 0 auto;
 }
 
-#galery_3x3 th{
+#galery_3x3 th {
     padding: 0 10px 0 10px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.picture {
+    float: left;
+    display: block;
+    width: 22%;
+    text-align: center;
+    border-radius: 10px;
+    background: #2a6093;
+    padding: 1% 0.5%;
+    margin: 1%;
+}
+
+.picture:hover {
+    background: #45525a;
+}
+
+footer {
+    clear: both;
+}
+
+.gallery {
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (max-width:1080px) {
+    .picture {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 720px) {
+
+    .picture {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .picture {
+        width: 90%;
+    }
+    .box{
+        display: none;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
+
